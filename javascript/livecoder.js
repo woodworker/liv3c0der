@@ -505,7 +505,7 @@
       };
 
       LiveCoder.prototype.keydown = function(e) {
-        if (e.metaKey) {
+        if (e.metaKey || e.altKey) {
           if (e.keyCode === 13) {
             this.reload();
           }

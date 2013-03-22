@@ -347,7 +347,7 @@ new Lawnchair {name: 'livecoder', adapter: 'dom'}, (db) ->
         console.log(exception)
 
     keydown: (e) =>
-      if e.metaKey
+      if e.metaKey || e.altKey
         if e.keyCode == 13
           @reload()
         if e.keyCode == 83
